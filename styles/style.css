@@ -7,9 +7,84 @@ body{
 background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 height: 500px;
+width: 100%;
+
+
 }
 
 a.nav-hover:hover, a.nav-hover:active{
     
     border-bottom:2px solid white ;   
+}
+#fst-sec{
+    width: 100%;
+    height: 550px;
+    background: #355C7D;
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    
+
+}
+#sed-sec{
+    width: 100%;
+    height: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+}
+#sed-sec{
+    z-index: 1;
+}
+.sec-container{
+    background: white;
+}
+.frm-1{
+    width: 400px;
+    margin-top: 10px;
+    padding-left: 5px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.0);
+    border: 1px solid;
+    color: white;
+}
+::placeholder {
+    color: #355C7D;
+    opacity: 1; /* Firefox */
+  }
+.quot-frm{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    
+}
+.frm-div{
+    background: #C06C84
+
+}
+.sec-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.we-oft{
+    float: left;
+    text-align: justify;
+}
+.we-oft h5{
+    font-weight: bold;
+}
+.split{
+    height: auto;
+    position: relative;
+    background: rgb(192,108,132);
+    background: linear-gradient(315deg, rgba(192,108,132,1) 28%, rgba(108,91,123,0.9416141456582633) 51%, rgba(53,92,125,1) 88%);
+}
+.split{
+    z-index: 2;
+}
+.v-m{
+    float: left;
+    padding-left: 25%;
+    
 }

@@ -82,9 +82,78 @@ a.nav-hover:hover, a.nav-hover:active{
 }
 .split{
     z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .v-m{
     float: left;
     padding-left: 25%;
     
+}
+.bg-1{
+    background-position: center;
+    background-size: cover;
+}
+.bg-1{
+    position: relative;
+}
+.bg-back-abt{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    padding: 0;
+    margin: 0;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+
+}
+.slider-warpper{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.slider{
+    height: 50px;
+    padding-left: 15px;
+    overflow: hidden;
+   
+}
+.slider-text1{
+    background: yellowgreen;
+    animation: slide 5s linear infinite;
+}
+.slider-text2
+{
+    background: red;
+}
+.slider-text3
+{
+    background: yellow;
+}
+.slider div {
+    color: white;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+@keyframes slide {
+    0%{margin-top: -300px;}
+    5%{margin-top: -200px;}
+    33%{margin-top: -200px;}
+    38%{margin-top: -100px;}
+    66%{margin-top: -100px;}
+    71%{margin-top: 0px;}
+    100%{margin-top: 0px;}
+}
+#products{
+    background: rgb(192,108,132);
+    background: linear-gradient(55deg, rgba(192,108,132,1) 28%, rgba(108,91,123,1) 51%, rgba(53,92,125,1) 88%);
 }

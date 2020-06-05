@@ -50,7 +50,7 @@ a.nav-hover:hover, a.nav-hover:active{
     color: white;
 }
 ::placeholder {
-    color: #355C7D;
+    color: black;
     opacity: 1; /* Firefox */
   }
 .quot-frm{
@@ -61,7 +61,8 @@ a.nav-hover:hover, a.nav-hover:active{
     
 }
 .frm-div{
-    background: #C06C84
+    background: rgb(192,108,132);
+    background: linear-gradient(55deg, rgba(192,108,132,1) 28%, rgba(108,91,123,1) 51%, rgba(53,92,125,1) 88%);
 
 }
 .sec-container{
@@ -124,16 +125,16 @@ a.nav-hover:hover, a.nav-hover:active{
    
 }
 .slider-text1{
-    background: yellowgreen;
+    background: rgb(192,108,132);
     animation: slide 5s linear infinite;
 }
 .slider-text2
 {
-    background: red;
+    background: rgba(53,92,125,1)
 }
 .slider-text3
 {
-    background: yellow;
+    background: rgba(108,91,123,0.9416141456582633)
 }
 .slider div {
     color: white;
@@ -156,4 +157,23 @@ a.nav-hover:hover, a.nav-hover:active{
 #products{
     background: rgb(192,108,132);
     background: linear-gradient(55deg, rgba(192,108,132,1) 28%, rgba(108,91,123,1) 51%, rgba(53,92,125,1) 88%);
+}
+
+ul div:hover{
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.25);
+}
+.footerupper{
+    background: #15171a;
+    
+    color: #95989e;
+    list-style: none;
+}
+.contact{
+
+    list-style: none;
+}
+.foot{
+    background: #0e1012;
+    color: #373838;
+    font-size: 15px;
 }

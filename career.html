@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/741f4e4eb3.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/career.css">
+    <link rel="icon" href="images/icon.jpg">
+  
+  </head>
+  <body>
+    <div id="home">
+        <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light  bg-transperant  " >
+          <img style="width: 150px;" src="images/logo.jpg" alt="sltouch">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <ul class="navbar-nav " style="margin-left: auto;margin-right: auto;">
+              <li class="nav-item active">
+                <a class="nav-link nav-hover" href="index.html" style="font-weight: bold;  color: white;">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link nav-hover" style="font-weight: bold; color: white;" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link nav-hover" style="font-weight: bold; color: white;" href="index.html">Proudcts</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link nav-hover" style="font-weight: bold; color: white;" href="index.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-hover" style="font-weight: bold; color: white;" href="career.html">Careers</a>
+                </li>
+          
+          </div>
+        </nav>
+      </header>
+      <section id="fst-sec" style="height: 800px;">
+          <div class="container-fulid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="career-1">
+                      <div class="career-2">
+                          <h3>Join Us</h3>
+                          <form action="" >
+                              <div>
+                                  <input type="text" placeholder="First Name"  class="form-filed-1"> <br>
+                                  <input type="text" placeholder="Last Name"  class=" form-filed-1">
+                              </div>
+                              <div>
+                                <input type="email" placeholder="Your Email "  class=" form-filed-1"> 
+                              </div>
+                              <div id="dynamicInput">
+                                <input type="text" placeholder="Skills You have"  name="myInputs[]" class="form-filed-1">
+                              </div>
+                              <input type="button" value="Add more Skills"  onclick="addInput('dynamicInput');" class="btn" >
+                              <div>
+                                  <input type="text" placeholder="Say Somthing About You" class="form-filed-2">
+                              </div>
+                              <input type="submit" value="Submit" id="submit" class="btn">
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+
+                  
+              </div>
+          </div>
+          
+      </section>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <script>
+        var counter = 1;
+        var limit = 4;
+        function addInput(divName){
+           if (counter == limit)  {
+          alert("You have reached the limit of adding " + counter + " inputs");
+     }
+         else {
+          var newdiv = document.createElement('div');
+          newdiv.innerHTML = (counter + 1) + " <br><input type='text' placeholder='Skill' name='myInputs[]' class='form-filed-1' >";
+          document.getElementById(divName).appendChild(newdiv);
+          counter++;
+     }
+}
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

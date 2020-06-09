@@ -92,12 +92,12 @@
                 <div>
                   <h2 class="text-center mt-4"> Get a Quote</h2>
                   <form class="quot-frm" action="">
-                    <input class="frm-1" type="text" placeholder="Name">
-                    <input class="frm-1" type="text" placeholder="Company Name">
-                    <input class="frm-1" type="email" placeholder="Email ">
-                    <input class="frm-1" type="number" placeholder="Mobile">
-                    <input  class="frm-1"type="text" placeholder="Message" style="height: 100px;">
-                    <button class="btn" type="submit" style="margin-left: 40%; margin-top: 10px; ">Submit</button>
+                    <input id="name"  class="frm-1" type="text" placeholder="Name">
+                    <input id="cmpyname" class="frm-1" type="text" placeholder="Company Name">
+                    <input id="email" class="frm-1" type="email" placeholder="Email ">
+                    <input id="mobile" class="frm-1" type="number" placeholder="Mobile">
+                    <input  id="message" class="frm-1"type="text" placeholder="Message" style="height: 100px;">
+                    <button id="submit" class="btn" type="button" style="margin-left: 40%; margin-top: 10px; ">Submit</button>
 
 
                   </form> 
@@ -377,11 +377,11 @@
                 </div>
                 <div>
                   <ul class="contact">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Contacts</a></li>
-                    <li><a href="">Career</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="career.html">Career</a></li>
                   </ul>
                 </div>
               </div>
@@ -405,8 +405,38 @@
     
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      $("#submit").click(function(){
+        var name =$("#name").val();
+        var company =$("#cmpyname").val();
+        var email = $("#email").val();
+        var mobile = $("#mobile").val();
+        var message = $("#message").val();
+        if(name=='' ||company == ''||email ==''||mobile==''||message ==''){
+          swal({
+                  title: "Somthing is Missing",
+                  text: "Please check all the fields",
+                  icon: "warning",
+                  button: "OK",
+               });
+        }else{
+          swal({
+                 title: "Thank You ",
+                 text: "We will connect you shortly",
+                 icon: "success",
+                 button: "Great Job!",
+              });
+        }
+        
+        });
+     
+    </script>
   </body>
+
 </html>

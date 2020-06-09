@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/741f4e4eb3.js" crossorigin="anonymous"></script>
   
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/news.css">
     <link rel="icon" href="images/icon.jpg">
   
 </head>
@@ -79,6 +80,25 @@
                       </div>
 
 
+                    </div>
+                    <div class="col md-6">
+                      <div id="myNews" class="news">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        
+                        
+                          <p style="font-size: 40px;">COVID-19 Message</p>
+                          <p>
+                            Wash Your hands with soap and running water when hands are visibly dirty
+                            if your hands are not visibly dirty frequently clean them by using 
+                            alcohol-based hand rub or soap and water <br>
+                            
+                              <i style="font-size: 30px;" class="fas fa-hands-wash"></i>
+                             <p style="font-size: 40px;"> Let's Brake the Chain</p>
+                            
+                          </p>
+                        
+                      </div>
+                      <button class="msg-btn" style="font-size:20px;cursor:pointer;margin-left: 50%;" onclick="openNav()">COVID-19 Alert</button>
                     </div>
                 </div>
             </div>
@@ -402,7 +422,15 @@
 
       
     <!-- Optional JavaScript -->
+    <Script>
+    function openNav() {
+      document.getElementById("myNews").style.width = "380px";
+    }
     
+    function closeNav() {
+      document.getElementById("myNews").style.width = "0";
+    }
+  </Script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    

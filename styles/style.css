@@ -229,3 +229,60 @@ ul div:hover{
     from {left:0px;}
     to {left: 200px;}
 }
+
+.btn{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color:rgb(192,108,132);
+    color: black;
+    border-radius: 12px;
+    
+    border: 2px solid;
+    font-weight: bold;
+    border-color:#22314a ;
+
+}
+.btn:hover{
+    background-color:#22314a;
+    color: white;
+}
+.footerupper {
+    text-decoration: none;
+    color: #95989e;
+}
+a{
+    color: #95989e; 
+    
+}
+
+.social-media a{
+    
+    text-decoration: none;
+    transition: 0.4s;
+    color: #706e6c;
+    
+    padding: 5px;
+    margin-right:5px;
+}
+
+
+
+.social-media a:hover > i{
+    transform: scale(1.6) rotate(15deg);
+}
+
+.social-media-1 a :hover{
+    color:#3b5999;
+}
+.social-media-2 a :hover{
+    color:#e4405f;
+}
+.social-media-3 a :hover{
+    color:#55acee;
+}
+.social-media-4 a :hover{
+    color:#0077B5;
+}
+.social-media-5 a :hover{
+    color:#3cba54;
+}

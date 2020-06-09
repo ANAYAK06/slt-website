@@ -45,20 +45,20 @@
                           <h3>Join Us</h3>
                           <form action="" >
                               <div>
-                                  <input type="text" placeholder="First Name"  class="form-filed-1"> <br>
-                                  <input type="text" placeholder="Last Name"  class=" form-filed-1">
+                                  <input id="fname" type="text" placeholder="First Name"  class="form-filed-1"> <br>
+                                  <input id="lname" type="text" placeholder="Last Name"  class=" form-filed-1">
                               </div>
                               <div>
-                                <input type="email" placeholder="Your Email "  class=" form-filed-1"> 
+                                <input id="email" type="email" placeholder="Your Email "  class=" form-filed-1"> 
                               </div>
                               <div id="dynamicInput">
-                                <input type="text" placeholder="Skills You have"  name="myInputs[]" class="form-filed-1">
+                                <input id="skill" type="text" placeholder="Skills You have"  name="myInputs[]" class="form-filed-1">
                               </div>
                               <input type="button" value="Add more Skills"  onclick="addInput('dynamicInput');" class="btn" >
                               <div>
-                                  <input type="text" placeholder="Say Somthing About You" class="form-filed-2">
+                                  <input id="message"  type="text" placeholder="Say Somthing About You" class="form-filed-2">
                               </div>
-                              <input type="submit" value="Submit" id="submit" class="btn">
+                              <input type="button" value="Submit" id="submit" class="btn">
                           </form>
                       </div>
                     </div>
@@ -93,5 +93,32 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $("#submit").click(function(){
+        var fname =$("#fname").val();
+        var lname =$("#lname").val();
+        var email = $("#email").val();
+        var skill = $("#skill").val();
+
+        var message = $("#message").val();
+        if(fname=='' ||lname == ''||email ==''||skill==''||message ==''){
+          swal({
+                  title: "Somthing is Missing",
+                  text: "Please check all the fields",
+                  icon: "warning",
+                  button: "OK",
+               });
+        }else{
+          swal({
+                 title: "Thank You ",
+                 text: "We will connect you shortly",
+                 icon: "success",
+                 button: "Great Job!",
+              });
+        }
+        
+        });
+    </script>
   </body>
 </html>
